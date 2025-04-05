@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <title>DigiCart</title>
+  </head>
+  <body class="font-[yekan] bg-gray-200">
+    <header>
+      <nav class="nav mt-4">
+        <div class="container mx-auto">
+          <!-- Start First Header -->
+          <div class="flex justify-between items-center hidden sm:flex">
+            <div class="relative">
+              <input
+                type="text"
+                class="bg-white py-2 px-10 rounded-xl text-gray-400"
+                placeholder="جستجوی محصول"
+              />
+              <span
+                class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"
+              >
+                <img src="./images/svgs/header/search.svg" alt="" />
+              </span>
+            </div>
+            <div class="boxes flex items-center gap-4 text-gray-400">
+              <div
+                class="first-box flex items-center h-[30px] w-[113px] rounded-xl bg-white"
+              >
+                <img
+                  src="./images/svgs/header/emojione_flag-for-iran.svg"
+                  alt=""
+                />
+                فارسی | تومان
+              </div>
+              <div
+                class="second-box flex items-center justify-center gap-4 h-[44px] w-[165px] rounded-xl bg-white"
+              >
+                09331809897
+                <img src="./images/svgs/header/fi-rr-phone-call.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- Mobile First Header -->
+          <div class="flex justify-between sm:hidden">
+            <img src="./images/svgs/header/logo.svg" alt="logo" class="m-3" />
+            <div
+              class="flex items-center rounded-lg overflow-hidden bg-white m-3"
+            >
+              <input
+                type="text"
+                class="p-2 outline-none flex-1 text-gray-400"
+                placeholder="جستجوی محصول"
+              />
+              <span class="p-2 text-gray-400">
+                <img src="./images/svgs/header/search.svg" alt="" />
+              </span>
+            </div>
+          </div>
+          <!-- End First Header -->
+          <!-- Start Second Header -->
+          <ul class="flex justify-between mt-5 bg-white relative rounded-xl">
+            <div
+              class="xl:hidden bg-slate-800 m-5 p-3 rounded-xl cursor-pointer"
+              id="brger"
+            >
+              <img src="./images/svgs/header/brger.svg" alt="" />
+            </div>
+            <ul class="py-4 mr-4 hidden xl:flex items-center">
+              <li>
+                <p
+                  href="#"
+                  class="w-[70px] h-[36px] bg-[#EEEEF2] rounded-xl"
+                ></p>
+              </li>
+              <p class="bg-slate-400 w-1 h-[30px] mx-8"></p>
+              <ul class="flex gap-4">
+                <li>
+                  <a href="#" class="text-rose-500">صفحه اصلی</a>
+                  <p
+                    class="bg-rose-500 w-[79px] h-[8px] absolute bottom-0 rounded-t-xl"
+                  ></p>
+                </li>
+                <li>
+                  <a href="#">گیفت کارت ها</a>
+                </li>
+                <li>
+                  <a href="#">بلاگ </a>
+                </li>
+                <li>
+                  <a href="#">درباره ما</a>
+                </li>
+                <li>
+                  <a href="#">تماس با ما</a>
+                </li>
+              </ul>
+            </ul>
+            <ul class="py-4 ml-4 flex items-center gap-4">
+              <li class="bg-slate-800 p-3 rounded-xl cursor-pointer">
+                <img src="./images/svgs/header/sun.svg" alt="sun" />
+              </li>
+              <li class="bg-slate-800 p-3 rounded-xl cursor-pointer relative">
+                <span className="absolute top-1 right-1 inline-flex size-3 rounded-full bg-rose-500"></span>
+                <span className="absolute top-1 right-1 inline-flex size-3 rounded-full bg-rose-500 animate-ping"></span>
+                <img src="./images/svgs/header/bell.svg" alt="sun" />
+              </li>
+              <li
+                class="bg-slate-800 p-3 rounded-xl border border-rose-500 cursor-pointer"
+              >
+                <img src="./images/svgs/header/like.svg" alt="sun" />
+              </li>
+              <li class="bg-slate-800 p-3 rounded-xl cursor-pointer">
+                <img src="./images/svgs/header/pocket.svg" alt="sun" />
+              </li>
+              <p class="hidden sm:flex bg-slate-400 w-1 h-[30px] mx-4"></p>
+              <li>
+                <p
+                  href="#"
+                  class="hidden sm:flex [138px] h-[44px] bg-slate-800 rounded-xl text-white flex items-center justify-between p-5"
+                >
+                  احسان امانیان
+                  <img src="./images/svgs/header/arrow-down.svg" alt="" />
+                </p>
+                <p
+                  class="flex sm:hidden [138px] h-[44px] bg-slate-800 rounded-xl text-white flex items-center justify-between p-5"
+                >
+                  <img src="./images/svgs/header/person.svg" alt="" />
+                </p>
+              </li>
+            </ul>
+          </ul>
+          <!-- End Second Header -->
+        </div>
+      </nav>
+      <!-- start content-header -->
+      <section>
+        <div class="container mx-auto">
+          <div class="content-headers grid grid-cols-4 gap-4 mt-8">
+            <div class="rounded-[20px] col-span-4 2xl:col-span-3">
+              <div class="swiper mySwiper w-full">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/cat.png" loading="lazy" class="rounded-xl" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/cat.png" loading="lazy" class="rounded-xl" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/cat.png" loading="lazy" class="rounded-xl" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="swiper-button-next  bg-white/10 backdrop-blur-md shadow-lg p-8 rounded-xl"
+                ></div>
+                <div
+                  class="swiper-button-prev  bg-white/10 backdrop-blur-md shadow-lg p-8 rounded-xl"
+                ></div>
+              </div>
+            </div>
+            <div class="bg-[#F6F6F8] rounded-xl col-span-4 2xl:col-span-1">
+              <h1 class="text-slate-900 flex p-3 text-xl">
+                <img src="./images/svgs/header/box-arrow.svg" alt="" />
+                <span>پرفروش ترین های این هفته</span>
+              </h1>
+              <div
+                class="p-4 m-3 text-sm flex items-center bg-white rounded-xl shadow"
+              >
+                <img src="./images/svgs/header/steam.svg" alt="" />
+                <div class="p-3">
+                  <h1>
+                    گیفت کارت ۵ دلاری استیم
+                    <span
+                      class="bg-rose-500 text-white text-xs px-1 rounded-3xl"
+                      >٪۵ تخفیف</span
+                    >
+                  </h1>
+                  <p>۱۲۵۰۰۰ تومان</p>
+                </div>
+              </div>
+              <!--  -->
+              <div
+                class="p-4 m-3 text-sm flex items-center bg-white rounded-md shadow"
+              >
+                <img src="./images/svgs/header/google-play.svg" alt="" />
+                <div class="p-3">
+                  <h1>گیف کارت گوگل پلی استور 10 دلاری</h1>
+                  <p>۱۲۵۰۰۰ تومان</p>
+                </div>
+              </div>
+              <!--  -->
+              <div
+                class="p-4 m-3 text-sm flex items-center bg-white rounded-md shadow"
+              >
+                <img src="./images/svgs/header/ituns.svg" alt="" />
+                <div class="p-3">
+                  <h1>
+                    گیف کارت اپل استور 100 دلاری
+                    <span
+                      class="bg-rose-500 text-white text-xs px-1 rounded-3xl"
+                      >٪۵ تخفیف</span
+                    >
+                  </h1>
+                  <p>۱۲۵۰۰۰ تومان</p>
+                </div>
+              </div>
+              <!--  -->
+              <div
+                class="p-4 m-3 text-sm flex items-center bg-white rounded-md shadow"
+              >
+                <img src="./images/svgs/header/amazon.svg" alt="" />
+                <div class="p-3">
+                  <h1>
+                    گیف کارت آمازون 10 دلاری
+                    <span
+                      class="bg-green-600 text-white text-xs px-1 px-1 rounded-3xl"
+                      >تحویل فوری</span
+                    >
+                  </h1>
+                  <p>۱۲۵۰۰۰ تومان</p>
+                </div>
+              </div>
+              <!--  -->
+              <div
+                class="p-4 m-3 text-sm flex items-center bg-white rounded-md shadow"
+              >
+                <img src="./images/svgs/header/play.svg" alt="" />
+                <div class="p-3">
+                  <h1>گیف کارت پلی استیشن 100 دلاری</h1>
+                  <p>۱۲۵۰۰۰ تومان</p>
+                </div>
+              </div>
+              <div
+                class="p-4 m-3 text-sm flex items-center bg-white rounded-md shadow"
+              >
+                <img src="./images/svgs/header/xbox.svg" alt="" />
+                <div class="p-3">
+                  <h1>گیف کارت پلی استیشن 100 دلاری</h1>
+                  <p>۱۲۵۰۰۰ تومان</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Contetn Header -->
+          <!-- Start  -->
+          <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
+            <div
+              class="grid justify-items-center p-8 gap-4 shadow m-10 rounded-xl"
+            >
+              <img src="./images/svgs/header/tick-header.svg" alt="" />
+              <h1>تضمین اصالت کالا</h1>
+            </div>
+            <div
+              class="grid justify-items-center p-8 gap-4 shadow m-10 rounded-xl"
+            >
+              <img src="./images/svgs/header/header-pocket.svg" alt="" />
+              <h1>خرید اسان ایمن</h1>
+            </div>
+            <div
+              class="grid justify-items-center p-8 gap-4 shadow m-10 rounded-xl"
+            >
+              <img src="./images/svgs/header/header-box.svg" alt="" />
+              <h1>تحویل سریع و انی</h1>
+            </div>
+            <div
+              class="grid justify-items-center p-8 gap-4 shadow m-10 rounded-xl"
+            >
+              <img src="./images/svgs/header/header-headephone.svg" alt="" />
+              <h1>پشتیبانی سریع تلفنی</h1>
+            </div>
+            <div
+              class="grid justify-items-center justify-items-center p-8 gap-4 shadow m-10 rounded-xl"
+            >
+              <img src="./images/svgs/header/header-paymets.svg" alt="" />
+              <h1>ضمانت عودت وجه</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="skeleton">
+      <div class="container mx-auto">
+        <div class="m-4 mx-auto grid grid-cols-12 gap-4">
+          <div
+            class="col-span-12 sm:col-span-4 h-[206px] sm:h-auto row-span-2 rounded-lg bg-white"
+          ></div>
+          <div
+            class="col-span-12 sm:col-span-4 h-[206px] rounded-xl bg-white"
+          ></div>
+          <div
+            class="col-span-12 sm:col-span-4 h-[206px] rounded-xl bg-white"
+          ></div>
+          <div
+            class="col-span-12 sm:col-span-8 h-[206px] rounded-xl bg-white"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <!-- Start Discount-cards -->
+    <section class="discount-cards my-14">
+      <div class="container mx-auto">
+        <h1 class="flex mb-1 text-xl">
+          محصولات تخفیف دار
+          <img
+            class="object-fill"
+            src="./images/svgs/discount/discount-rose.svg"
+            alt=""
+          />
+        </h1>
+        <p class="bg-rose-600 w-[200px] h-[4px] rounded-b-xl"></p>
+        <!-- gift title -->
+        <div class="gift-card my-6">
+          <ul
+            class="overflow-x-auto whitespace-nowrap flex xl:flex-nowrap items-center gap-4"
+          >
+            <li class="bg-rose-500 text-white px-5 py-3 rounded-xl">
+              <a href="#">همه گیفت کارت ها</a>
+            </li>
+            <li
+              class="bg-white text-gray-700 px-5 py-2 rounded-xl flex items-center justify-center gap-1"
+            >
+              <img src="./images/svgs/icons/playstation.svg" alt="" />
+              <a href="#">گیفت کارت پلی استیشن</a>
+            </li>
+            <li
+              class="bg-white text-gray-700 px-5 py-2 rounded-xl flex items-center justify-center gap-1"
+            >
+              <img src="./images/svgs/icons/xbox.svg" alt="" />
+              <a href="#">گیفت کارت پلی استیشن</a>
+            </li>
+            <li
+              class="bg-white text-gray-700 px-5 py-2 rounded-xl flex items-center"
+              justify-center
+              gap-1
+            >
+              <img src="./images/svgs/icons/apple.svg" alt="" />
+              <a href="#">گیفت کارت پلی استیشن</a>
+            </li>
+            <li
+              class="bg-white text-gray-700 px-5 py-2 rounded-xl flex items-center justify-center gap-1"
+            >
+              <img src="./images/svgs/icons/steam.svg" alt="" />
+              <a href="#">گیفت کارت پلی استیشن</a>
+            </li>
+            <li class="hidden xl:flex absolute left-20 gap-5 text-gray-800">
+              <a href="#">مشاهده همه</a>
+              <img src="./images/svgs/icons/arrow.svg" alt="" />
+            </li>
+          </ul>
+          <ul
+            class="overflow-x-auto whitespace-nowrap flex xl:flex-nowrap items-center gap-4 mt-9"
+          >
+            <li class="bg-white p-5 rounded-xl flex flex-col items-center">
+              <img
+                src="./images/ituns.card.jpg"
+                class="w-[224px] h-[303px]"
+                alt=""
+              />
+              <div class="content">
+                <a href="">گیفت کارت گوگل پلی 20 دلاری</a>
+                <p></p>
+                <p class="flex flex-col items-end text-sm">
+                  <a href="#" class="text-rose-500 line-through"
+                    >تومان 456,000</a
+                  >
+                  <a href="#">تومان 256,000</a>
+                </p>
+                <span class="text-white bg-rose-500 rounded-xl px-2"
+                  >۵٪ تخفیف</span
+                >
+                <div class="color-box mt-2 text-white">
+                  <span class="bg-violet-900 py-1 px-4 rounded-lg">ویژه</span>
+                  <span class="bg-green-400 py-1 px-4 rounded-lg"
+                    >تحویل فوری</span
+                  >
+                  <span class="bg-rose-500 py-1 px-4 rounded-lg"
+                    >تخفیف دار</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="bg-rose-400 text-white flex mt-2 p-3 justify-center text-lg gap-2 rounded-lg hover:bg-rose-500"
+                >
+                  2:24:29
+                  <img src="./images/svgs/icons/watch.svg" alt="" />
+                </a>
+                <div class="shoping-cart flex justify-between gap-2 mt-2">
+                  <a href="#" class="bg-gray-200 flex p-3 rounded-lg">
+                    <img src="./images/svgs/icons/black-like.svg" alt="" />
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-200 flex p-3 justify-center text-lg gap-2 rounded-lg"
+                  >
+                    <img src="./images/svgs/icons/red-shop.svg" alt="" />
+                    افزودن به سبد خرید
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="bg-white p-5 rounded-xl flex flex-col items-center">
+              <img
+                src="./images/ituns.card.jpg"
+                class="w-[224px] h-[303px]"
+                alt=""
+              />
+              <div class="content">
+                <a href="">گیفت کارت گوگل پلی 20 دلاری</a>
+                <p></p>
+                <p class="flex flex-col items-end text-sm">
+                  <a href="#" class="text-rose-500 line-through"
+                    >تومان 456,000</a
+                  >
+                  <a href="#">تومان 256,000</a>
+                </p>
+                <span class="text-white bg-rose-500 rounded-xl px-2"
+                  >۵٪ تخفیف</span
+                >
+                <div class="color-box mt-2 text-white">
+                  <span class="bg-violet-900 py-1 px-4 rounded-lg">ویژه</span>
+                  <span class="bg-green-400 py-1 px-4 rounded-lg"
+                    >تحویل فوری</span
+                  >
+                  <span class="bg-rose-500 py-1 px-4 rounded-lg"
+                    >تخفیف دار</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="bg-rose-400 text-white flex mt-2 p-3 justify-center text-lg gap-2 rounded-lg hover:bg-rose-500"
+                >
+                  2:24:29
+                  <img src="./images/svgs/icons/watch.svg" alt="" />
+                </a>
+                <div class="shoping-cart flex justify-between gap-2 mt-2">
+                  <a href="#" class="bg-gray-200 flex p-3 rounded-lg">
+                    <img src="./images/svgs/icons/black-like.svg" alt="" />
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-200 flex p-3 justify-center text-lg gap-2 rounded-lg"
+                  >
+                    <img src="./images/svgs/icons/red-shop.svg" alt="" />
+                    افزودن به سبد خرید
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="bg-white p-5 rounded-xl flex flex-col items-center">
+              <img
+                src="./images/ituns.card.jpg"
+                class="w-[224px] h-[303px]"
+                alt=""
+              />
+              <div class="content">
+                <a href="">گیفت کارت گوگل پلی 20 دلاری</a>
+                <p></p>
+                <p class="flex flex-col items-end text-sm">
+                  <a href="#" class="text-rose-500 line-through"
+                    >تومان 456,000</a
+                  >
+                  <a href="#">تومان 256,000</a>
+                </p>
+                <span class="text-white bg-rose-500 rounded-xl px-2"
+                  >۵٪ تخفیف</span
+                >
+                <div class="color-box mt-2 text-white">
+                  <span class="bg-violet-900 py-1 px-4 rounded-lg">ویژه</span>
+                  <span class="bg-green-400 py-1 px-4 rounded-lg"
+                    >تحویل فوری</span
+                  >
+                  <span class="bg-rose-500 py-1 px-4 rounded-lg"
+                    >تخفیف دار</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="bg-rose-400 text-white flex mt-2 p-3 justify-center text-lg gap-2 rounded-lg hover:bg-rose-500"
+                >
+                  2:24:29
+                  <img src="./images/svgs/icons/watch.svg" alt="" />
+                </a>
+                <div class="shoping-cart flex justify-between gap-2 mt-2">
+                  <a href="#" class="bg-gray-200 flex p-3 rounded-lg">
+                    <img src="./images/svgs/icons/black-like.svg" alt="" />
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-200 flex p-3 justify-center text-lg gap-2 rounded-lg"
+                  >
+                    <img src="./images/svgs/icons/red-shop.svg" alt="" />
+                    افزودن به سبد خرید
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="bg-white p-5 rounded-xl flex flex-col items-center">
+              <img
+                src="./images/ituns.card.jpg"
+                class="w-[224px] h-[303px]"
+                alt=""
+              />
+              <div class="content">
+                <a href="">گیفت کارت گوگل پلی 20 دلاری</a>
+                <p></p>
+                <p class="flex flex-col items-end text-sm">
+                  <a href="#" class="text-rose-500 line-through"
+                    >تومان 456,000</a
+                  >
+                  <a href="#">تومان 256,000</a>
+                </p>
+                <span class="text-white bg-rose-500 rounded-xl px-2"
+                  >۵٪ تخفیف</span
+                >
+                <div class="color-box mt-2 text-white">
+                  <span class="bg-violet-900 py-1 px-4 rounded-lg">ویژه</span>
+                  <span class="bg-green-400 py-1 px-4 rounded-lg"
+                    >تحویل فوری</span
+                  >
+                  <span class="bg-rose-500 py-1 px-4 rounded-lg"
+                    >تخفیف دار</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="bg-rose-400 text-white flex mt-2 p-3 justify-center text-lg gap-2 rounded-lg hover:bg-rose-500"
+                >
+                  2:24:29
+                  <img src="./images/svgs/icons/watch.svg" alt="" />
+                </a>
+                <div class="shoping-cart flex justify-between gap-2 mt-2">
+                  <a href="#" class="bg-gray-200 flex p-3 rounded-lg">
+                    <img src="./images/svgs/icons/black-like.svg" alt="" />
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-200 flex p-3 justify-center text-lg gap-2 rounded-lg"
+                  >
+                    <img src="./images/svgs/icons/red-shop.svg" alt="" />
+                    افزودن به سبد خرید
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="bg-white p-5 rounded-xl flex flex-col items-center">
+              <img
+                src="./images/ituns.card.jpg"
+                class="w-[224px] h-[303px]"
+                alt=""
+              />
+              <div class="content">
+                <a href="">گیفت کارت گوگل پلی 20 دلاری</a>
+                <p></p>
+                <p class="flex flex-col items-end text-sm">
+                  <a href="#" class="text-rose-500 line-through"
+                    >تومان 456,000</a
+                  >
+                  <a href="#">تومان 256,000</a>
+                </p>
+                <span class="text-white bg-rose-500 rounded-xl px-2"
+                  >۵٪ تخفیف</span
+                >
+                <div class="color-box mt-2 text-white">
+                  <span class="bg-violet-900 py-1 px-4 rounded-lg">ویژه</span>
+                  <span class="bg-green-400 py-1 px-4 rounded-lg"
+                    >تحویل فوری</span
+                  >
+                  <span class="bg-rose-500 py-1 px-4 rounded-lg"
+                    >تخفیف دار</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="bg-rose-400 text-white flex mt-2 p-3 justify-center text-lg gap-2 rounded-lg hover:bg-rose-500"
+                >
+                  2:24:29
+                  <img src="./images/svgs/icons/watch.svg" alt="" />
+                </a>
+                <div class="shoping-cart flex justify-between gap-2 mt-2">
+                  <a href="#" class="bg-gray-200 flex p-3 rounded-lg">
+                    <img src="./images/svgs/icons/black-like.svg" alt="" />
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-200 flex p-3 justify-center text-lg gap-2 rounded-lg"
+                  >
+                    <img src="./images/svgs/icons/red-shop.svg" alt="" />
+                    افزودن به سبد خرید
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- End Discount-cards -->
+    <!-- Start Gift-cards -->
+    <section class="gift-cards my-14 bg-gray-300 py-10">
+      <div class="container mx-auto">
+        <h1 class="flex mb-1 text-xl">دسته بندی گیفت کارت ها</h1>
+        <p class="bg-rose-600 w-[200px] h-[4px] rounded-b-xl"></p>
+        <!-- gift title -->
+        <div class="gift-card my-6">
+          <ul
+            class="overflow-x-auto whitespace-nowrap flex xl:flex-nowrap items-center gap-4"
+          >
+            <li class="bg-rose-500 text-white px-5 py-3 rounded-xl">
+              <a href="#">همه گیفت کارت ها</a>
+            </li>
+            <li
+              class="bg-white text-gray-700 px-5 py-2 rounded-xl flex items-center justify-center gap-1"
+            >
+              <img src="./images/svgs/icons/playstation.svg" alt="" />
+              <a href="#">گیفت کارت پلی استیشن</a>
+            </li>
+            <li
+              class="bg-white text-gray-700 px-5 py-2 rounded-xl flex items-center justify-center gap-1"
+            >
+              <img src="./images/svgs/icons/xbox.svg" alt="" />
+              <a href="#">گیفت کارت پلی استیشن</a>
+            </li>
+            <li
+              class="bg-white text-gray-700 px-5 py-2 rounded-xl flex items-center"
+              justify-center
+              gap-1
+            >
+              <img src="./images/svgs/icons/apple.svg" alt="" />
+              <a href="#">گیفت کارت پلی استیشن</a>
+            </li>
+            <li
+              class="bg-white text-gray-700 px-5 py-2 rounded-xl flex items-center justify-center gap-1"
+            >
+              <img src="./images/svgs/icons/steam.svg" alt="" />
+              <a href="#">گیفت کارت پلی استیشن</a>
+            </li>
+            <li class="hidden xl:flex absolute left-20 gap-5 text-gray-800">
+              <a href="#">مشاهده همه</a>
+              <img src="./images/svgs/icons/arrow.svg" alt="" />
+            </li>
+          </ul>
+          <ul
+            class="overflow-x-auto whitespace-nowrap flex xl:flex-nowrap items-center gap-4 mt-9"
+          >
+            <li class="bg-white p-5 rounded-xl flex flex-col items-center">
+              <img
+                src="./images/ituns.card.jpg"
+                class="w-[224px] h-[303px]"
+                alt=""
+              />
+              <div class="content">
+                <a href="">گیفت کارت گوگل پلی 20 دلاری</a>
+                <p></p>
+                <p class="flex flex-col items-end text-sm">
+                  <a href="#" class="text-rose-500 line-through"
+                    >تومان 456,000</a
+                  >
+                  <a href="#">تومان 256,000</a>
+                </p>
+                <span class="text-white bg-rose-500 rounded-xl px-2"
+                  >۵٪ تخفیف</span
+                >
+                <div class="color-box mt-2 text-white">
+                  <span class="bg-violet-900 py-1 px-4 rounded-lg">ویژه</span>
+                  <span class="bg-green-400 py-1 px-4 rounded-lg"
+                    >تحویل فوری</span
+                  >
+                  <span class="bg-rose-500 py-1 px-4 rounded-lg"
+                    >تخفیف دار</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="bg-rose-400 text-white flex mt-2 p-3 justify-center text-lg gap-2 rounded-lg hover:bg-rose-500"
+                >
+                  2:24:29
+                  <img src="./images/svgs/icons/watch.svg" alt="" />
+                </a>
+                <div class="shoping-cart flex justify-between gap-2 mt-2">
+                  <a href="#" class="bg-gray-200 flex p-3 rounded-lg">
+                    <img src="./images/svgs/icons/black-like.svg" alt="" />
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-200 flex p-3 justify-center text-lg gap-2 rounded-lg"
+                  >
+                    <img src="./images/svgs/icons/red-shop.svg" alt="" />
+                    افزودن به سبد خرید
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="bg-white p-5 rounded-xl flex flex-col items-center">
+              <img
+                src="./images/ituns.card.jpg"
+                class="w-[224px] h-[303px]"
+                alt=""
+              />
+              <div class="content">
+                <a href="">گیفت کارت گوگل پلی 20 دلاری</a>
+                <p></p>
+                <p class="flex flex-col items-end text-sm">
+                  <a href="#" class="text-rose-500 line-through"
+                    >تومان 456,000</a
+                  >
+                  <a href="#">تومان 256,000</a>
+                </p>
+                <span class="text-white bg-rose-500 rounded-xl px-2"
+                  >۵٪ تخفیف</span
+                >
+                <div class="color-box mt-2 text-white">
+                  <span class="bg-violet-900 py-1 px-4 rounded-lg">ویژه</span>
+                  <span class="bg-green-400 py-1 px-4 rounded-lg"
+                    >تحویل فوری</span
+                  >
+                  <span class="bg-rose-500 py-1 px-4 rounded-lg"
+                    >تخفیف دار</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="bg-rose-400 text-white flex mt-2 p-3 justify-center text-lg gap-2 rounded-lg hover:bg-rose-500"
+                >
+                  2:24:29
+                  <img src="./images/svgs/icons/watch.svg" alt="" />
+                </a>
+                <div class="shoping-cart flex justify-between gap-2 mt-2">
+                  <a href="#" class="bg-gray-200 flex p-3 rounded-lg">
+                    <img src="./images/svgs/icons/black-like.svg" alt="" />
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-200 flex p-3 justify-center text-lg gap-2 rounded-lg"
+                  >
+                    <img src="./images/svgs/icons/red-shop.svg" alt="" />
+                    افزودن به سبد خرید
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="bg-white p-5 rounded-xl flex flex-col items-center">
+              <img
+                src="./images/ituns.card.jpg"
+                class="w-[224px] h-[303px]"
+                alt=""
+              />
+              <div class="content">
+                <a href="">گیفت کارت گوگل پلی 20 دلاری</a>
+                <p></p>
+                <p class="flex flex-col items-end text-sm">
+                  <a href="#" class="text-rose-500 line-through"
+                    >تومان 456,000</a
+                  >
+                  <a href="#">تومان 256,000</a>
+                </p>
+                <span class="text-white bg-rose-500 rounded-xl px-2"
+                  >۵٪ تخفیف</span
+                >
+                <div class="color-box mt-2 text-white">
+                  <span class="bg-violet-900 py-1 px-4 rounded-lg">ویژه</span>
+                  <span class="bg-green-400 py-1 px-4 rounded-lg"
+                    >تحویل فوری</span
+                  >
+                  <span class="bg-rose-500 py-1 px-4 rounded-lg"
+                    >تخفیف دار</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="bg-rose-400 text-white flex mt-2 p-3 justify-center text-lg gap-2 rounded-lg hover:bg-rose-500"
+                >
+                  2:24:29
+                  <img src="./images/svgs/icons/watch.svg" alt="" />
+                </a>
+                <div class="shoping-cart flex justify-between gap-2 mt-2">
+                  <a href="#" class="bg-gray-200 flex p-3 rounded-lg">
+                    <img src="./images/svgs/icons/black-like.svg" alt="" />
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-200 flex p-3 justify-center text-lg gap-2 rounded-lg"
+                  >
+                    <img src="./images/svgs/icons/red-shop.svg" alt="" />
+                    افزودن به سبد خرید
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="bg-white p-5 rounded-xl flex flex-col items-center">
+              <img
+                src="./images/ituns.card.jpg"
+                class="w-[224px] h-[303px]"
+                alt=""
+              />
+              <div class="content">
+                <a href="">گیفت کارت گوگل پلی 20 دلاری</a>
+                <p></p>
+                <p class="flex flex-col items-end text-sm">
+                  <a href="#" class="text-rose-500 line-through"
+                    >تومان 456,000</a
+                  >
+                  <a href="#">تومان 256,000</a>
+                </p>
+                <span class="text-white bg-rose-500 rounded-xl px-2"
+                  >۵٪ تخفیف</span
+                >
+                <div class="color-box mt-2 text-white">
+                  <span class="bg-violet-900 py-1 px-4 rounded-lg">ویژه</span>
+                  <span class="bg-green-400 py-1 px-4 rounded-lg"
+                    >تحویل فوری</span
+                  >
+                  <span class="bg-rose-500 py-1 px-4 rounded-lg"
+                    >تخفیف دار</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="bg-rose-400 text-white flex mt-2 p-3 justify-center text-lg gap-2 rounded-lg hover:bg-rose-500"
+                >
+                  2:24:29
+                  <img src="./images/svgs/icons/watch.svg" alt="" />
+                </a>
+                <div class="shoping-cart flex justify-between gap-2 mt-2">
+                  <a href="#" class="bg-gray-200 flex p-3 rounded-lg">
+                    <img src="./images/svgs/icons/black-like.svg" alt="" />
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-200 flex p-3 justify-center text-lg gap-2 rounded-lg"
+                  >
+                    <img src="./images/svgs/icons/red-shop.svg" alt="" />
+                    افزودن به سبد خرید
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="bg-white p-5 rounded-xl flex flex-col items-center">
+              <img
+                src="./images/ituns.card.jpg"
+                class="w-[224px] h-[303px]"
+                alt=""
+              />
+              <div class="content">
+                <a href="">گیفت کارت گوگل پلی 20 دلاری</a>
+                <p></p>
+                <p class="flex flex-col items-end text-sm">
+                  <a href="#" class="text-rose-500 line-through"
+                    >تومان 456,000</a
+                  >
+                  <a href="#">تومان 256,000</a>
+                </p>
+                <span class="text-white bg-rose-500 rounded-xl px-2"
+                  >۵٪ تخفیف</span
+                >
+                <div class="color-box mt-2 text-white">
+                  <span class="bg-violet-900 py-1 px-4 rounded-lg">ویژه</span>
+                  <span class="bg-green-400 py-1 px-4 rounded-lg"
+                    >تحویل فوری</span
+                  >
+                  <span class="bg-rose-500 py-1 px-4 rounded-lg"
+                    >تخفیف دار</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="bg-rose-400 text-white flex mt-2 p-3 justify-center text-lg gap-2 rounded-lg hover:bg-rose-500"
+                >
+                  2:24:29
+                  <img src="./images/svgs/icons/watch.svg" alt="" />
+                </a>
+                <div class="shoping-cart flex justify-between gap-2 mt-2">
+                  <a href="#" class="bg-gray-200 flex p-3 rounded-lg">
+                    <img src="./images/svgs/icons/black-like.svg" alt="" />
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-200 flex p-3 justify-center text-lg gap-2 rounded-lg"
+                  >
+                    <img src="./images/svgs/icons/red-shop.svg" alt="" />
+                    افزودن به سبد خرید
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- End gift-cards -->
+    <!-- Start last-seen -->
+    <section class="gift-cards my-14">
+      <div class="container mx-auto">
+        <h1 class="flex mb-1 text-xl">اخیرا مشاهده شده</h1>
+        <p class="bg-rose-600 w-[150px] h-[4px] rounded-b-xl"></p>
+        <!-- gift title -->
+        <div class="gift-card my-6">
+          <ul
+            class="overflow-x-auto whitespace-nowrap flex xl:flex-nowrap items-center gap-4"
+          >
+            <li class="bg-rose-500 text-white px-5 py-3 rounded-xl">
+              <a href="#">همه گیفت کارت ها</a>
+            </li>
+            <li
+              class="bg-white text-gray-700 px-5 py-2 rounded-xl flex items-center justify-center gap-1"
+            >
+              <img src="./images/svgs/icons/playstation.svg" alt="" />
+              <a href="#">گیفت کارت پلی استیشن</a>
+            </li>
+            <li
+              class="bg-white text-gray-700 px-5 py-2 rounded-xl flex items-center justify-center gap-1"
+            >
+              <img src="./images/svgs/icons/xbox.svg" alt="" />
+              <a href="#">گیفت کارت پلی استیشن</a>
+            </li>
+            <li
+              class="bg-white text-gray-700 px-5 py-2 rounded-xl flex items-center"
+              justify-center
+              gap-1
+            >
+              <img src="./images/svgs/icons/apple.svg" alt="" />
+              <a href="#">گیفت کارت پلی استیشن</a>
+            </li>
+            <li
+              class="bg-white text-gray-700 px-5 py-2 rounded-xl flex items-center justify-center gap-1"
+            >
+              <img src="./images/svgs/icons/steam.svg" alt="" />
+              <a href="#">گیفت کارت پلی استیشن</a>
+            </li>
+            <li class="hidden xl:flex absolute left-20 gap-5 text-gray-800">
+              <a href="#">مشاهده همه</a>
+              <img src="./images/svgs/icons/arrow.svg" alt="" />
+            </li>
+          </ul>
+          <ul
+            class="overflow-x-auto whitespace-nowrap flex xl:flex-nowrap items-center gap-4 mt-9"
+          >
+            <li class="bg-white p-5 rounded-xl flex flex-col items-center">
+              <img
+                src="./images/ituns.card.jpg"
+                class="w-[224px] h-[303px]"
+                alt=""
+              />
+              <div class="content">
+                <a href="">گیفت کارت گوگل پلی 20 دلاری</a>
+                <p></p>
+                <p class="flex flex-col items-end text-sm">
+                  <a href="#" class="text-rose-500 line-through"
+                    >تومان 456,000</a
+                  >
+                  <a href="#">تومان 256,000</a>
+                </p>
+                <span class="text-white bg-rose-500 rounded-xl px-2"
+                  >۵٪ تخفیف</span
+                >
+                <div class="color-box mt-2 text-white">
+                  <span class="bg-violet-900 py-1 px-4 rounded-lg">ویژه</span>
+                  <span class="bg-green-400 py-1 px-4 rounded-lg"
+                    >تحویل فوری</span
+                  >
+                  <span class="bg-rose-500 py-1 px-4 rounded-lg"
+                    >تخفیف دار</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="bg-rose-400 text-white flex mt-2 p-3 justify-center text-lg gap-2 rounded-lg hover:bg-rose-500"
+                >
+                  2:24:29
+                  <img src="./images/svgs/icons/watch.svg" alt="" />
+                </a>
+                <div class="shoping-cart flex justify-between gap-2 mt-2">
+                  <a href="#" class="bg-gray-200 flex p-3 rounded-lg">
+                    <img src="./images/svgs/icons/black-like.svg" alt="" />
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-200 flex p-3 justify-center text-lg gap-2 rounded-lg"
+                  >
+                    <img src="./images/svgs/icons/red-shop.svg" alt="" />
+                    افزودن به سبد خرید
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="bg-white p-5 rounded-xl flex flex-col items-center">
+              <img
+                src="./images/ituns.card.jpg"
+                class="w-[224px] h-[303px]"
+                alt=""
+              />
+              <div class="content">
+                <a href="">گیفت کارت گوگل پلی 20 دلاری</a>
+                <p></p>
+                <p class="flex flex-col items-end text-sm">
+                  <a href="#" class="text-rose-500 line-through"
+                    >تومان 456,000</a
+                  >
+                  <a href="#">تومان 256,000</a>
+                </p>
+                <span class="text-white bg-rose-500 rounded-xl px-2"
+                  >۵٪ تخفیف</span
+                >
+                <div class="color-box mt-2 text-white">
+                  <span class="bg-violet-900 py-1 px-4 rounded-lg">ویژه</span>
+                  <span class="bg-green-400 py-1 px-4 rounded-lg"
+                    >تحویل فوری</span
+                  >
+                  <span class="bg-rose-500 py-1 px-4 rounded-lg"
+                    >تخفیف دار</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="bg-rose-400 text-white flex mt-2 p-3 justify-center text-lg gap-2 rounded-lg hover:bg-rose-500"
+                >
+                  2:24:29
+                  <img src="./images/svgs/icons/watch.svg" alt="" />
+                </a>
+                <div class="shoping-cart flex justify-between gap-2 mt-2">
+                  <a href="#" class="bg-gray-200 flex p-3 rounded-lg">
+                    <img src="./images/svgs/icons/black-like.svg" alt="" />
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-200 flex p-3 justify-center text-lg gap-2 rounded-lg"
+                  >
+                    <img src="./images/svgs/icons/red-shop.svg" alt="" />
+                    افزودن به سبد خرید
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="bg-white p-5 rounded-xl flex flex-col items-center">
+              <img
+                src="./images/ituns.card.jpg"
+                class="w-[224px] h-[303px]"
+                alt=""
+              />
+              <div class="content">
+                <a href="">گیفت کارت گوگل پلی 20 دلاری</a>
+                <p></p>
+                <p class="flex flex-col items-end text-sm">
+                  <a href="#" class="text-rose-500 line-through"
+                    >تومان 456,000</a
+                  >
+                  <a href="#">تومان 256,000</a>
+                </p>
+                <span class="text-white bg-rose-500 rounded-xl px-2"
+                  >۵٪ تخفیف</span
+                >
+                <div class="color-box mt-2 text-white">
+                  <span class="bg-violet-900 py-1 px-4 rounded-lg">ویژه</span>
+                  <span class="bg-green-400 py-1 px-4 rounded-lg"
+                    >تحویل فوری</span
+                  >
+                  <span class="bg-rose-500 py-1 px-4 rounded-lg"
+                    >تخفیف دار</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="bg-rose-400 text-white flex mt-2 p-3 justify-center text-lg gap-2 rounded-lg hover:bg-rose-500"
+                >
+                  2:24:29
+                  <img src="./images/svgs/icons/watch.svg" alt="" />
+                </a>
+                <div class="shoping-cart flex justify-between gap-2 mt-2">
+                  <a href="#" class="bg-gray-200 flex p-3 rounded-lg">
+                    <img src="./images/svgs/icons/black-like.svg" alt="" />
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-200 flex p-3 justify-center text-lg gap-2 rounded-lg"
+                  >
+                    <img src="./images/svgs/icons/red-shop.svg" alt="" />
+                    افزودن به سبد خرید
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="bg-white p-5 rounded-xl flex flex-col items-center">
+              <img
+                src="./images/ituns.card.jpg"
+                class="w-[224px] h-[303px]"
+                alt=""
+              />
+              <div class="content">
+                <a href="">گیفت کارت گوگل پلی 20 دلاری</a>
+                <p></p>
+                <p class="flex flex-col items-end text-sm">
+                  <a href="#" class="text-rose-500 line-through"
+                    >تومان 456,000</a
+                  >
+                  <a href="#">تومان 256,000</a>
+                </p>
+                <span class="text-white bg-rose-500 rounded-xl px-2"
+                  >۵٪ تخفیف</span
+                >
+                <div class="color-box mt-2 text-white">
+                  <span class="bg-violet-900 py-1 px-4 rounded-lg">ویژه</span>
+                  <span class="bg-green-400 py-1 px-4 rounded-lg"
+                    >تحویل فوری</span
+                  >
+                  <span class="bg-rose-500 py-1 px-4 rounded-lg"
+                    >تخفیف دار</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="bg-rose-400 text-white flex mt-2 p-3 justify-center text-lg gap-2 rounded-lg hover:bg-rose-500"
+                >
+                  2:24:29
+                  <img src="./images/svgs/icons/watch.svg" alt="" />
+                </a>
+                <div class="shoping-cart flex justify-between gap-2 mt-2">
+                  <a href="#" class="bg-gray-200 flex p-3 rounded-lg">
+                    <img src="./images/svgs/icons/black-like.svg" alt="" />
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-200 flex p-3 justify-center text-lg gap-2 rounded-lg"
+                  >
+                    <img src="./images/svgs/icons/red-shop.svg" alt="" />
+                    افزودن به سبد خرید
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="bg-white p-5 rounded-xl flex flex-col items-center">
+              <img
+                src="./images/ituns.card.jpg"
+                class="w-[224px] h-[303px]"
+                alt=""
+              />
+              <div class="content">
+                <a href="">گیفت کارت گوگل پلی 20 دلاری</a>
+                <p></p>
+                <p class="flex flex-col items-end text-sm">
+                  <a href="#" class="text-rose-500 line-through"
+                    >تومان 456,000</a
+                  >
+                  <a href="#">تومان 256,000</a>
+                </p>
+                <span class="text-white bg-rose-500 rounded-xl px-2"
+                  >۵٪ تخفیف</span
+                >
+                <div class="color-box mt-2 text-white">
+                  <span class="bg-violet-900 py-1 px-4 rounded-lg">ویژه</span>
+                  <span class="bg-green-400 py-1 px-4 rounded-lg"
+                    >تحویل فوری</span
+                  >
+                  <span class="bg-rose-500 py-1 px-4 rounded-lg"
+                    >تخفیف دار</span
+                  >
+                </div>
+                <a
+                  href="#"
+                  class="bg-rose-400 text-white flex mt-2 p-3 justify-center text-lg gap-2 rounded-lg hover:bg-rose-500"
+                >
+                  2:24:29
+                  <img src="./images/svgs/icons/watch.svg" alt="" />
+                </a>
+                <div class="shoping-cart flex justify-between gap-2 mt-2">
+                  <a href="#" class="bg-gray-200 flex p-3 rounded-lg">
+                    <img src="./images/svgs/icons/black-like.svg" alt="" />
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-200 flex p-3 justify-center text-lg gap-2 rounded-lg"
+                  >
+                    <img src="./images/svgs/icons/red-shop.svg" alt="" />
+                    افزودن به سبد خرید
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- End last seen  -->
+
+    <!-- Start  -->
+    <section class="news-articels my-14">
+      <div class="container mx-auto">
+        <!-- header text -->
+        <div class="flex justify-between items-center">
+          <div>
+            <h1 class="text-lg">اخبار و مقالات</h1>
+            <p class="bg-rose-600 w-[100px] h-[4px] rounded-b-xl"></p>
+          </div>
+          <div class="flex gap-2">
+            <li class="hidden xl:flex absolute left-20 gap-5 text-gray-800">
+              <a href="#">مشاهده همه</a>
+              <img src="./images/svgs/icons/arrow.svg" alt="" />
+            </li>
+          </div>
+        </div>
+        <!--  -->
+        <div class="container mx-auto p-4">
+          <div class="grid md:grid-cols-3 gap-4">
+            <!-- کارت اصلی -->
+            <div class="md:col-span-2 relative">
+              <img
+                src="./images/mario.png"
+                class="w-full h-100 object-cover rounded-xl"
+                alt="خبر اصلی"
+              />
+              <div
+                class="absolute bottom-0 bg-gradient-to-t from-black/80 to-transparent text-white p-4 w-full rounded-b-xl"
+              >
+                <h2 class="text-xl font-bold">
+                  جزئیات آپدیت جدید بازی Fall Guys
+                </h2>
+                <p class="text-sm">
+                  آپدیت نهایی بازی و رفع باگ‌های عجیب کاربران
+                </p>
+                <button
+                  class="mt-2 bg-rose-500 px-4 py-2 rounded-md cursor-pointer"
+                >
+                  ادامه مطلب
+                </button>
+              </div>
+            </div>
+
+            <!-- کارت‌های کوچک‌تر -->
+            <div class="space-y-4">
+              <div class="flex bg-gray-100 rounded-xl overflow-hidden">
+                <img
+                  src="./images/img-content-1.png"
+                  class="w-22 xl:w-32 h-30 object-cover"
+                  alt="خبر ۱"
+                />
+                <div class="p-3 flex flex-col justify-between">
+                  <h3 class="text-sm font-semibold">
+                    انتشار بازی BattleField Mobile در اوایل مهرماه!
+                  </h3>
+                  <button
+                    class="p-2 w-30 bg-rose-500 rounded-md text-white cursor-pointer"
+                  >
+                    ادامه مطلب
+                  </button>
+                </div>
+              </div>
+              <div class="flex bg-gray-100 rounded-xl overflow-hidden">
+                <img
+                  src="./images/img-content-2.png"
+                  class="w-22 xl:w-32 h-30 object-cover"
+                  alt="خبر ۲"
+                />
+                <div class="p-3 flex flex-col justify-between">
+                  <h3 class="text-sm font-semibold">
+                    جزئیات جدید بازی Outlaws از سری استاروارز!
+                  </h3>
+                  <button
+                    class="p-2 w-30 bg-rose-500 rounded-md text-white cursor-pointer"
+                  >
+                    ادامه مطلب
+                  </button>
+                </div>
+              </div>
+              <div class="flex bg-gray-100 rounded-xl overflow-hidden">
+                <img
+                  src="./images/img-content-3.png"
+                  class="w-22 xl:w-32 h-30 object-cover"
+                  alt="خبر ۳"
+                />
+                <div class="p-3 flex flex-col justify-between">
+                  <h3 class="text-sm font-semibold">
+                    کدهای تقلب بازی مافیا ۳ برای ایکس‌باکس وان
+                  </h3>
+                  <button
+                    class="p-2 w-30 bg-rose-500 rounded-md text-white cursor-pointer"
+                  >
+                    ادامه مطلب
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div
+        class="socials bg-rose-500 w-full h-[100px] flex justify-between items-center"
+      >
+        <div class="container mx-auto">
+          <div
+            class="flex justify-center sm:justify-between items-center flex-wrap"
+          >
+            <div class="title">
+              <h1 class="text-3xl text-white">
+                ما را در شبکه اجتماعی دنبال کنید
+              </h1>
+            </div>
+            <div class="flex gap-4 items-center">
+              <img
+                class="bg-rose-300 p-2 rounded-lg"
+                src="./images/svgs/icons/youtube.svg"
+                alt=""
+              />
+              <img
+                class="bg-rose-300 p-3 rounded-lg"
+                src="./images/svgs/icons/twitter.svg"
+                alt=""
+              />
+              <img
+                class="bg-rose-300 p-2 rounded-lg"
+                src="./images/svgs/icons/instagram.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto px-4 mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3
+              class="text-lg font-bold border-b-4 border-rose-500 w-30 rounded pb-1"
+            >
+              لوگو
+            </h3>
+            <p class="mt-4">📞 ۲۶۵۱۵۶۴۶۵۸۴</p>
+            <p>📍 مشهد، خیابان فلان، نبش فلان</p>
+            <h4
+              class="text-lg font-bold border-b-4 border-rose-500 w-30 rounded pb-1"
+            >
+              عضویت در خبرنامه
+            </h4>
+            <div class="mt-4 flex bg-white p-2 rounded-lg">
+              <input
+                type="email"
+                class="p-2 flex-1 rounded-r-md"
+                placeholder="آدرس ایمیل شما..."
+              />
+              <button class="bg-rose-500 text-white px-4 py-2 rounded-l-md">
+                ارسال
+              </button>
+            </div>
+          </div>
+          <div>
+            <h3
+              class="text-lg font-bold border-b-4 border-rose-500 w-30 rounded pb-1"
+            >
+              خدمات و اکانت‌ها
+            </h3>
+            <ul class="mt-4 space-y-2">
+              <li class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-rose-500 rounded"></span> گیفت کارت
+                Steam
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-rose-500 rounded"></span> گیفت کارت
+                Amazon
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-rose-500 rounded"></span> گیفت کارت
+                Apple
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-rose-500 rounded"></span> گیفت کارت
+                Apple
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-rose-500 rounded"></span> گیفت کارت
+                Apple
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-rose-500 rounded"></span> گیفت کارت
+                Apple
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3
+              class="text-lg font-bold border-b-4 border-rose-500 w-30 rounded pb-1"
+            >
+              کالاهای دیجیتال
+            </h3>
+            <ul class="mt-4 space-y-2">
+              <li class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-rose-500 rounded"></span> گیفت کارت
+                Steam
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-rose-500 rounded"></span> گیفت کارت
+                Amazon
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-rose-500 rounded"></span> گیفت کارت
+                Apple
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-rose-500 rounded"></span> گیفت کارت
+                Apple
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-rose-500 rounded"></span> گیفت کارت
+                Apple
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-3 h-3 bg-rose-500 rounded"></span> گیفت کارت
+                Apple
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3
+              class="text-lg font-bold border-b-4 border-rose-500 w-30 rounded pb-1"
+            >
+              نمادها
+            </h3>
+            <div class="flex gap-2 mt-4 gap-4">
+              <img src="./images/svgs/footer/enemad.svg" alt="" />
+              <img src="./images/svgs/footer/zarinpal.svg" alt="" />
+            </div>
+            <h4
+              class="text-lg font-bold border-b-4 border-rose-500 w-30 rounded pb-1"
+            >
+              ارتباط با ما
+            </h4>
+            <div class="flex justify-evenly items-center mt-4 bg-white p-2 rounded">
+              <a href="#">
+                <img src="./images/svgs/footer/whatsapp.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="./images/svgs/footer/youtube.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="./images/svgs/footer/twitter.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="./images/svgs/footer/instagram.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white m-10 absolute bootom-0 right-0 left-0 rounded  p-4 text-center">
+        <h1 class="text-center text-2xl text-gray-500">تمام حقوق این وبسایت متعلق به فلان میباشد</h1>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+  </body>
+</html>
