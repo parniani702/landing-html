@@ -2,4 +2,4 @@
 
 landing giftshop 
 
-[view online](https://arash-parniani.github.io/landing-html/)
+[view online](https://parniani702.github.io/landing-html/)
